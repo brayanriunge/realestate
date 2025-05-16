@@ -27,7 +27,23 @@ export default function Navbar() {
           <div className={`${flexStyles} gap-2 w-5/6`}>
             {isAboveMediaScreens ? (
               <div className={`${flexStyles} w-full gap-4`}>
-                <div className={`${flexStyles} gap-10 p-2 m-2 `}></div>
+                <div className={`${flexStyles} gap-10 p-2 m-2 `}>
+                  <div>
+                    <Link href="/">Home</Link>
+                  </div>
+                  <div>
+                    <Link href="/">Properties</Link>
+                  </div>
+                  <div>
+                    <Link href="/">About Us</Link>
+                  </div>
+                  <div>
+                    <Link href="/">Testimonies</Link>
+                  </div>
+                  <div>
+                    <Link href="/">Contacts</Link>
+                  </div>
+                </div>
               </div>
             ) : (
               <div className="flex justify-end p-4">
