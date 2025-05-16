@@ -6,7 +6,9 @@ export default function Navbar() {
   const flexStyles = "justify-between flex items-center";
   return (
     <nav>
-      <div className={`z-30 w-full ${flexStyles} fixed top-0 bg-[#2E8B57]`}>
+      <div
+        className={`z-30 w-full ${flexStyles} fixed top-0 bg-gradient-to-b from-[#FFFFFF] to-[#F5F5F5] `}
+      >
         <div className={`${flexStyles} mx-auto w-5/6`}>
           <Link href="/">
             <Image
