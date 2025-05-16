@@ -1,9 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "@/public/LOGO.jpg";
+import useMediaQuery from "@/hooks/useMediaQuery";
+import { useState } from "react";
+import { HiBars3 } from "react-icons/hi2";
 
 export default function Navbar() {
   const flexStyles = "justify-between flex items-center";
+  const isAboveMediaScreens = useMediaQuery("(min-width: 1060px)");
+  const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   return (
     <nav>
       <div
@@ -19,7 +24,22 @@ export default function Navbar() {
               className="rounded-full"
             />
           </Link>
-          <div className={`${flexStyles} gap-2 w-5/6`}>Home</div>
+          <div className={`${flexStyles} gap-2 w-5/6`}>
+            {isAboveMediaScreens ? (
+              <div className={`${flexStyles} w-full gap-4`}>
+                <div className={`${flexStyles} gap-10 p-2 m-2 `}></div>
+              </div>
+            ) : (
+              <div className="flex justify-end p-4">
+                <button
+                  className="rounded-full p-2"
+                  onClick={() => setIsMenuToggled(!isMenuToggled)}
+                >
+                  <HiBars3 className="h-6 w-6" />
+                </button>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </nav>
