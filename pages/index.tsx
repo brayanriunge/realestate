@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import Head from "next/head";
 import Navbar from "@/components/Navbar";
+import Card from "@/components/Card";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,6 +22,7 @@ export default function Home() {
         <link rel="icon" href="/LOGO.jpg" />
       </Head>
       <Navbar />
+      <Card />
     </>
   );
 }
