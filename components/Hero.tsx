@@ -4,24 +4,24 @@ import { Carousel } from "@/components/ui/carousel";
 export function CarouselDemo() {
   const slideData = [
     {
-      title: "Mystic Mountains",
-      button: "Explore Component",
-      src: "https://images.unsplash.com/photo-1494806812796-244fe51b774d?q=80&w=3534&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title:
+        "After 30 years abroad, we wanted coastal land for retirement. Your 'Land Matching' service found us a beachfront plot with clean titles. The installment plan (3 years, 0% interest) was a lifesaver. We're now constructing - your recommended architects were superb!",
+      author: "Grace & Daniel W., Mombasa (Bought Retirement Plot in Kilifi)",
     },
     {
-      title: "Urban Dreams",
-      button: "Explore Component",
-      src: "https://images.unsplash.com/photo-1518710843675-2540dd79065c?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title:
+        "I needed fertile land for maize farming. Your agri-land specialist analyzed soil samples and even connected me with irrigation experts. The legal team handled all KLRA paperwork. My first harvest paid for the land! Your agri-focused approach is unmatched.",
+      author: "Mr. Otieno, Kisumu (Purchased 20-Acre Farm in Uasin Gishu)",
     },
     {
-      title: "Neon Nights",
-      button: "Explore Component",
-      src: "https://images.unsplash.com/photo-1590041794748-2d8eb73a571c?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title:
+        "Buying land from overseas seemed impossible until I found your company. Your virtual tours, 24/7 WhatsApp support, and M-Pesa payment options made the process seamless. The land was exactly as shown in your drone videos. I've since referred three family members!",
+      author: "Sarah K., UK (Purchased 5 Acres in Naivasha)",
     },
     {
-      title: "Desert Whispers",
-      button: "Explore Component",
-      src: "https://images.unsplash.com/photo-1679420437432-80cfbf88986c?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title:
+        "As a first-time buyer, I was nervous about land scams. Your team guided me through every step - from verifying the title deed to connecting me with a trusted surveyor. Within 3 weeks, I was holding genuine documents for my plot. The after-sale support, including free site visits, made me feel valued. I'm now building my dream home!",
+      author: "John M., Nairobi (Purchased 1/4 Acre in Kitengela)",
     },
   ];
   return (
