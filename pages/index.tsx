@@ -3,6 +3,7 @@ import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import Card from "@/components/Card";
 import { CarouselDemo } from "@/components/Hero";
+import { ImagesSliderDemo } from "@/components/ImagesSliderDemo";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -23,6 +24,7 @@ export default function Home() {
         <link rel="icon" href="/LOGO.jpg" />
       </Head>
       <Navbar />
+      <ImagesSliderDemo />
       <CarouselDemo />
       <Card />
     </>

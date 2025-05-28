@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <nav>
       <div
-        className={`z-30 w-full ${flexStyles} fixed top-0 bg-[rgb(241,235,230)] `}
+        className={`z-30 w-full ${flexStyles} fixed top-0 bg-white `}
         //  bg-gradient-to-b from-[#FFFFFF] to-[#F5F5F5]
       >
         <div className={`${flexStyles} mx-auto w-5/6`}>
@@ -28,7 +28,7 @@ export default function Navbar() {
           <div className={`${flexStyles} gap-2 w-5/6`}>
             {isAboveMediaScreens ? (
               <div className={`${flexStyles} w-full gap-4`}>
-                <div className={`${flexStyles} gap-10 p-2 m-2 `}>
+                <div className={`${flexStyles} gap-10 p-2 m-2 font-bold `}>
                   <div>
                     <Link href="/">Home</Link>
                   </div>
