@@ -12,7 +12,8 @@ export default function Navbar() {
   return (
     <nav>
       <div
-        className={`z-30 w-full ${flexStyles} fixed top-0 bg-gradient-to-b from-[#FFFFFF] to-[#F5F5F5] `}
+        className={`z-30 w-full ${flexStyles} fixed top-0 bg-[rgb(241,235,230)] `}
+        //  bg-gradient-to-b from-[#FFFFFF] to-[#F5F5F5]
       >
         <div className={`${flexStyles} mx-auto w-5/6`}>
           <Link href="/">
