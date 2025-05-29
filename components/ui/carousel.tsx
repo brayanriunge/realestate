@@ -81,7 +81,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
         }}
       >
         <div
-          className="absolute top-0 left-0 w-full h-full bg-[#1D1F2F] rounded-[1%] overflow-hidden transition-all duration-150 ease-out"
+          className="absolute top-0 left-0 w-full h-full bg-[rgb(241,235,230)] rounded-[1%] overflow-hidden transition-all duration-150 ease-out"
           style={{
             transform:
               current === index
@@ -101,7 +101,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
             decoding="sync"
           /> */}
           {current === index && (
-            <div className="absolute inset-0 bg-black/30 transition-all duration-1000" />
+            <div className="absolute inset-0 bg-gray/30 transition-all duration-1000" />
           )}
         </div>
 
@@ -110,9 +110,11 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
             current === index ? "opacity-100 visible" : "opacity-0 invisible"
           }`}
         >
-          <h2 className="text-xs  font-semibold  relative">{title}</h2>
+          <h2 className="text-md text-black  font-semibold  relative">
+            {title}
+          </h2>
           <div className="flex justify-center">
-            <p className="mt-6  px-4 py-2 w-fit mx-auto sm:text-sm h-12 border border-transparent text-xs flex justify-center items-center rounded-2xl hover:shadow-lg transition duration-200 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
+            <p className="mt-6  px-4 py-2 w-fit mx-auto text-black sm:text-sm h-12 border border-transparent text-xs flex justify-center items-center rounded-2xl hover:shadow-lg transition duration-200 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
               {author}
             </p>
           </div>
