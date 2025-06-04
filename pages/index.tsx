@@ -25,7 +25,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <ImagesSliderDemo />
-      <Card />
+      {/* <Card /> */}
       <CarouselDemo />
     </>
   );
