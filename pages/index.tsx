@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Card from "@/components/Card";
 import { CarouselDemo } from "@/components/Hero";
 import { ImagesSliderDemo } from "@/components/ImagesSliderDemo";
+import Footer from "../components/Footer";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -27,6 +28,7 @@ export default function Home() {
       <ImagesSliderDemo />
       <Card />
       <CarouselDemo />
+      <Footer />
     </>
   );
 }
