@@ -11,7 +11,7 @@ export default function Footer() {
       </div>
       {/* Contacts */}
       <div className="flex flex-col justify-between items-center gap-4">
-        {/* <p>Facebook</p> */}
+        <p>Facebook</p>
       </div>
     </div>
   );
