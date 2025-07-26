@@ -5,40 +5,15 @@ export default function Footer() {
   return (
     <div className="mx-auto w-full bg-gray-50 container ">
       <div className=" flex flex-wrap justify-between px-6 py-8 ">
-        <div>
-          <h2 className="mb-4 font-semibold uppercase text-2xl text-gray-900 underline">
-            Quick links
-          </h2>
-          <ul className="font-medium text-black">
-            <li className="mb-4">
-              <a href="#" className=" hover:underline">
-                About
-              </a>
-            </li>
-
-            <li className="mb-4">
-              <a href="/chat" className="hover:underline">
-                Chat with us
-              </a>
-            </li>
-            <li className="mb-4">
-              <a href="#" className="hover:underline">
-                Help Center
-              </a>
-            </li>
-          </ul>
-        </div>
         {/*location*/}
-        <div className=" flex flex-col items-center gap-4   ">
+        <div className=" flex flex-col  gap-1.5  ">
           <h2 className="mb-4 font-semibold uppercase text-2xl text-gray-900 underline">
             Office location
           </h2>
           <p className="font-medium">
-            Nyahururu, Hekima building opposite Mbaari Building.
-            {""}
-            Room number 7
+            Hekima building Nyahururu, opposite Mbaari Building.
           </p>
-          <p></p>
+          <p className="font-medium"> Room number 7</p>
         </div>
 
         {/* Contacts */}
@@ -46,27 +21,27 @@ export default function Footer() {
           <h2 className="mb-4 font-semibold uppercase text-2xl text-gray-900 underline">
             contacts
           </h2>
-          <p>Monday - Friday: 7am -6pm</p>
-          <p>Saturday: 8am - 4pm</p>
-          <p>Sunday: As per request</p>
+          <p className="font-medium mb-2">Monday - Friday: 7am -6pm</p>
+          <p className="font-medium mb-2">Saturday: 8am - 4pm</p>
+          <p className="font-medium mb-2">Sunday: As per request</p>
           <div className="mt-4">
-            <p>TelePhone: 0701842846</p>
-            <p>Email: riungebrian@gmail.com</p>
-            <p>Whatsapp: 0701842846</p>
+            <p className="font-medium mb-2">TelePhone: 0701842846</p>
+            <p className="font-medium mb-2">Email: riungebrian@gmail.com</p>
+            <p className="font-medium mb-2">Whatsapp: 0701842846</p>
           </div>
         </div>
-        <div className="underline"></div>
-      </div>
-
-      {/* Project loctions */}
-      <div className="flex flex-col gap-1.5 justify-between">
-        <h2 className="mb-4 font-semibold uppercase text-2xl text-gray-900 underline"></h2>
-        <p>Jibe</p>
-        <p>Nakuru</p>
-        <p>Olkalou</p>
-        <p>Makutano</p>
-        <p>Rumuruti</p>
-        <p>Sipili</p>
+        {/* Project loctions */}
+        <div className="flex flex-col gap-1.5 justify-between">
+          <h2 className="mb-4 font-semibold uppercase text-2xl text-gray-900 underline">
+            Project locations
+          </h2>
+          <p className="font-medium mb-2">Jibe</p>
+          <p className="font-medium mb-2">Nakuru</p>
+          <p className="font-medium mb-2">Olkalou</p>
+          <p className="font-medium mb-2">Makutano</p>
+          <p className="font-medium mb-2">Rumuruti</p>
+          <p className="font-medium mb-2">Sipili</p>
+        </div>
       </div>
 
       <div className="rounded-b-lg bg-gray-200 px-4 py-6 md:flex md:items-center md:justify-between">
