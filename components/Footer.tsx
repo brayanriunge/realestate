@@ -1,5 +1,7 @@
 import Link from "next/link";
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import { IoMdCall } from "react-icons/io";
 
 export default function Footer() {
   return (
@@ -24,10 +26,25 @@ export default function Footer() {
           <p className="font-medium mb-2">Monday - Friday: 7am -6pm</p>
           <p className="font-medium mb-2">Saturday: 8am - 4pm</p>
           <p className="font-medium mb-2">Sunday: As per request</p>
-          <div className="mt-4">
-            <p className="font-medium mb-2">TelePhone: 0701842846</p>
-            <p className="font-medium mb-2">Email: riungebrian@gmail.com</p>
-            <p className="font-medium mb-2">Whatsapp: 0701842846</p>
+          <div className="mt-4 ">
+            <p className="font-medium mb-2 ">
+              <span className="inline-flex mr-2">
+                <IoMdCall />
+              </span>
+              TelePhone: 0701842846
+            </p>
+            <p className="font-medium mb-2 ">
+              <span className="inline-flex mr-2">
+                <HiOutlineMail />
+              </span>
+              Email: riungebrian@gmail.com
+            </p>
+            <p className="font-medium mb-2 ">
+              <span className="inline-flex mr-2">
+                <FaWhatsapp />
+              </span>
+              Whatsapp: 0701842846
+            </p>
           </div>
         </div>
         {/* Project loctions */}
