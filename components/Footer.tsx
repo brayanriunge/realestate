@@ -4,9 +4,9 @@ import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 export default function Footer() {
   return (
     <div className="mx-auto w-full bg-gray-50 container ">
-      <div className=" flex flex-wrap justify-between  px-6 py-8 ">
+      <div className=" flex flex-wrap justify-between px-6 py-8 ">
         <div>
-          <h2 className="mb-6  font-semibold uppercase text-3xl text-gray-900">
+          <h2 className="mb-4 font-semibold uppercase text-2xl text-gray-900 underline">
             Quick links
           </h2>
           <ul className="font-medium text-black">
@@ -15,16 +15,7 @@ export default function Footer() {
                 About
               </a>
             </li>
-            <li className="mb-4">
-              <a href="/products/product" className="hover:underline">
-                Products
-              </a>
-            </li>
-            <li className="mb-4">
-              <a href="#" className="hover:underline">
-                Contact Us
-              </a>
-            </li>
+
             <li className="mb-4">
               <a href="/chat" className="hover:underline">
                 Chat with us
@@ -37,16 +28,24 @@ export default function Footer() {
             </li>
           </ul>
         </div>
+        {/*location*/}
         <div className=" flex flex-col items-center gap-4   ">
-          <h2 className="uppercase text-2xl">Office location</h2>
-          <p>
-            Nyahururu, Hekima building opposite Mbaari Building, Room number 7
+          <h2 className="mb-4 font-semibold uppercase text-2xl text-gray-900 underline">
+            Office location
+          </h2>
+          <p className="font-medium">
+            Nyahururu, Hekima building opposite Mbaari Building.
+            {""}
+            Room number 7
           </p>
           <p></p>
         </div>
+
         {/* Contacts */}
         <div className="flex flex-col justify-between  ">
-          <h2 className="underline uppercase text-2xl mb-4">contacts</h2>
+          <h2 className="mb-4 font-semibold uppercase text-2xl text-gray-900 underline">
+            contacts
+          </h2>
           <p>Monday - Friday: 7am -6pm</p>
           <p>Saturday: 8am - 4pm</p>
           <p>Sunday: As per request</p>
@@ -58,7 +57,17 @@ export default function Footer() {
         </div>
         <div className="underline"></div>
       </div>
-      {/* location */}
+
+      {/* Project loctions */}
+      <div className="flex flex-col gap-1.5 justify-between">
+        <h2 className="mb-4 font-semibold uppercase text-2xl text-gray-900 underline"></h2>
+        <p>Jibe</p>
+        <p>Nakuru</p>
+        <p>Olkalou</p>
+        <p>Makutano</p>
+        <p>Rumuruti</p>
+        <p>Sipili</p>
+      </div>
 
       <div className="rounded-b-lg bg-gray-200 px-4 py-6 md:flex md:items-center md:justify-between">
         <span className="text-sm text-gray-500 sm:text-center">
