@@ -7,6 +7,8 @@ import Card from "@/components/Card";
 import Footer from "../components/Footer";
 import FaqShow from "@/components/faqs/faqShow";
 import CarouselSample from "../components/CarouselSample";
+import Form from "@/components/contactus/ContactForm";
+import ContactForm from "@/components/contactus/ContactForm";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -30,6 +32,7 @@ export default function Home() {
       <CarouselSample />
       {/* <ImagesSliderDemo /> */}
       <Card />
+      <ContactForm />
       <FaqShow />
       {/* <CarouselDemo /> */}
       <Footer />

@@ -37,6 +37,8 @@ const CarouselSample = () => {
               <Image
                 src={poster.imgUrl}
                 alt="images"
+                width={500}
+                height={300}
                 className="h-96 w-full flex aspect-square items-center overflow-hidden justify-center p-6"
               />
             </div>
