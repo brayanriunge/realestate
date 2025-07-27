@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faCodepen } from "@fortawesome/free-brands-svg-icons";
+// import { faGithub, faCodepen } from "@fortawesome/free-brands-svg-icons";
 interface AccordionItemProps {
   title: string;
   content: string;
