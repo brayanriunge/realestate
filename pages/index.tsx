@@ -6,6 +6,7 @@ import Card from "@/components/Card";
 // import { ImagesSliderDemo } from "@/components/ImagesSliderDemo";
 import Footer from "../components/Footer";
 import FaqShow from "@/components/faqs/faqShow";
+import CarouselSample from "../components/CarouselSample";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
