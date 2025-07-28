@@ -51,9 +51,7 @@ export default function ContactForm() {
                     required
                   />
                 </FormControl>
-                {/* <FormDescription>
-                  This is your public display name.
-                </FormDescription> */}
+
                 <FormMessage />
               </FormItem>
             )}
@@ -73,9 +71,7 @@ export default function ContactForm() {
                     required
                   />
                 </FormControl>
-                {/* <FormDescription>
-                  This is your public display name.
-                </FormDescription> */}
+
                 <FormMessage />
               </FormItem>
             )}
@@ -95,9 +91,6 @@ export default function ContactForm() {
                     required
                   />
                 </FormControl>
-                {/* <FormDescription>
-                  This is your public display name.
-                </FormDescription> */}
                 <FormMessage />
               </FormItem>
             )}
@@ -117,9 +110,6 @@ export default function ContactForm() {
                     required
                   />
                 </FormControl>
-                {/* <FormDescription>
-                  When public display name.
-                </FormDescription> */}
                 <FormMessage />
               </FormItem>
             )}
@@ -160,9 +150,7 @@ export default function ContactForm() {
                     />
                   </PopoverContent>
                 </Popover>
-                {/* <FormDescription>
-                  Your date of birth is used to calculate your age.
-                </FormDescription> */}
+
                 <FormMessage />
               </FormItem>
             )}
