@@ -26,7 +26,7 @@ import { Input } from "@/components/ui/input";
 export default function ContactForm() {
   const form = useForm();
   return (
-    <div className="mx-auto bg-white rounded-2xl p-6 md:p-24 shadow-lg  max-w-5xl mt-4">
+    <div className="mx-auto bg-white rounded-2xl p-6 md:p-12 shadow-lg  max-w-4xl ">
       <h1 className="uppercase font-bold text-green-400 md:text-[36px] sm:text-[28px] text-center">
         book a site visit
       </h1>
@@ -36,11 +36,12 @@ export default function ContactForm() {
           method="POST"
           className=" space-y-4"
         >
+          {/* fullName */}
           <FormField
             control={form.control}
             name="fullName"
             render={({ field }) => (
-              <FormItem className="flex p-2 flex-row mt-4 space-x-13">
+              <FormItem className="flex p-2 flex-row mt-4 space-x-12">
                 <FormLabel>Full Name</FormLabel>
                 <FormControl>
                   <Input
@@ -57,11 +58,12 @@ export default function ContactForm() {
               </FormItem>
             )}
           />
+          {/* Phone Nember */}
           <FormField
             control={form.control}
             name="phoneNumber"
             render={({ field }) => (
-              <FormItem className="flex p-2 flex-row mt-4 space-x-4  ">
+              <FormItem className="flex p-2 flex-row mt-4 space-x-3  ">
                 <FormLabel>Phone Number</FormLabel>
                 <FormControl>
                   <Input
@@ -78,6 +80,7 @@ export default function ContactForm() {
               </FormItem>
             )}
           />
+          {/* Email */}
           <FormField
             control={form.control}
             name="email"
@@ -99,6 +102,7 @@ export default function ContactForm() {
               </FormItem>
             )}
           />
+          {/* location */}
           <FormField
             control={form.control}
             name="email"
@@ -120,20 +124,20 @@ export default function ContactForm() {
               </FormItem>
             )}
           />
-
+          {/* datepicker */}
           <FormField
             control={form.control}
             name="date"
             render={({ field }) => (
-              <FormItem className="flex flex-row space-x-22">
-                <FormLabel>Date </FormLabel>
+              <FormItem className="flex flex-row space-x-20">
+                <FormLabel className="ml-2">Date </FormLabel>
                 <Popover>
                   <PopoverTrigger asChild>
                     <FormControl>
                       <Button
                         variant={"outline"}
                         className={cn(
-                          "w-[240px] pl-3 text-left font-normal",
+                          "w-1/2 pl-3 text-left font-normal",
                           !field.value && "text-muted-foreground"
                         )}
                       >
@@ -163,7 +167,7 @@ export default function ContactForm() {
               </FormItem>
             )}
           />
-          <Button className="flex flex-end" type="submit">
+          <Button className="flex items-center" type="submit">
             Submit
           </Button>
         </form>
