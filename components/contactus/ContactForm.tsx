@@ -15,7 +15,7 @@ import { Calendar } from "@/components/ui/calendar";
 import {
   Form,
   FormControl,
-  FormDescription,
+  // FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -26,21 +26,21 @@ import { Input } from "@/components/ui/input";
 export default function ContactForm() {
   const form = useForm();
   return (
-    <div className="mx-auto bg-white rounded-2xl p-6 md:p-24 shadow-lg  max-w-5xl mt-14">
-      <h2 className="uppercase font-bold text-green-400 text-2xl">
+    <div className="mx-auto bg-white rounded-2xl p-6 md:p-24 shadow-lg  max-w-5xl mt-4">
+      <h1 className="uppercase font-bold text-green-400 md:text-[36px] sm:text-[28px] text-center">
         book a site visit
-      </h2>
+      </h1>
       <Form {...form}>
         <form
           action="https://formsubmit.co/yojusoji@mailgolem.com"
           method="POST"
-          className="space-y-8"
+          className=" space-y-4"
         >
           <FormField
             control={form.control}
             name="fullName"
             render={({ field }) => (
-              <FormItem className="flex p-2 flex-row mt-4">
+              <FormItem className="flex p-2 flex-row mt-4 space-x-13">
                 <FormLabel>Full Name</FormLabel>
                 <FormControl>
                   <Input
@@ -61,7 +61,7 @@ export default function ContactForm() {
             control={form.control}
             name="phoneNumber"
             render={({ field }) => (
-              <FormItem className="flex p-2 flex-row mt-4">
+              <FormItem className="flex p-2 flex-row mt-4 space-x-4  ">
                 <FormLabel>Phone Number</FormLabel>
                 <FormControl>
                   <Input
@@ -82,7 +82,7 @@ export default function ContactForm() {
             control={form.control}
             name="email"
             render={({ field }) => (
-              <FormItem className="flex p-2 flex-row mt-4">
+              <FormItem className="flex p-2 flex-row mt-4 space-x-19">
                 <FormLabel>Email</FormLabel>
                 <FormControl>
                   <Input
@@ -103,7 +103,7 @@ export default function ContactForm() {
             control={form.control}
             name="email"
             render={({ field }) => (
-              <FormItem className="flex p-2 flex-row mt-4">
+              <FormItem className="flex p-2 flex-row mt-4 space-x-14">
                 <FormLabel> Location</FormLabel>
                 <FormControl>
                   <Input
@@ -120,32 +120,12 @@ export default function ContactForm() {
               </FormItem>
             )}
           />
-          <FormField
-            control={form.control}
-            name="email"
-            render={({ field }) => (
-              <FormItem className="flex p-2 flex-row mt-4">
-                <FormLabel>Email</FormLabel>
-                <FormControl>
-                  <Input
-                    placeholder="Your Email Address"
-                    {...field}
-                    className="w-1/2"
-                    required
-                  />
-                </FormControl>
-                {/* <FormDescription>
-                  This is your public display name.
-                </FormDescription> */}
-                <FormMessage />
-              </FormItem>
-            )}
-          />
+
           <FormField
             control={form.control}
             name="date"
             render={({ field }) => (
-              <FormItem className="flex flex-row">
+              <FormItem className="flex flex-row space-x-22">
                 <FormLabel>Date </FormLabel>
                 <Popover>
                   <PopoverTrigger asChild>

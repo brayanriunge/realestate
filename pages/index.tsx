@@ -2,13 +2,12 @@
 import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import Card from "@/components/Card";
-// import { CarouselDemo } from "@/components/Hero";
-// import { ImagesSliderDemo } from "@/components/ImagesSliderDemo";
+
 import Footer from "../components/Footer";
 import FaqShow from "@/components/faqs/faqShow";
 import CarouselSample from "../components/CarouselSample";
-import Form from "@/components/contactus/ContactForm";
-import ContactForm from "@/components/contactus/ContactForm";
+
+import ContactusPage from "@/components/ContactusPage";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -32,7 +31,7 @@ export default function Home() {
       <CarouselSample />
       {/* <ImagesSliderDemo /> */}
       <Card />
-      <ContactForm />
+      <ContactusPage />
       <FaqShow />
       {/* <CarouselDemo /> */}
       <Footer />
