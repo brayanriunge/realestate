@@ -26,7 +26,7 @@ const CarouselSample = () => {
   //   Autoplay({ delay: 2000, stopOnInteraction: true })
   // );
   return (
-    <Carousel className="w-full overflow-hidden mt-20 ">
+    <Carousel className="w-full overflow-hidden mt-20 mb-0">
       <CarouselContent>
         {posters.map((poster) => (
           <CarouselItem

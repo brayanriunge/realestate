@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 // import { faGithub, faCodepen } from "@fortawesome/free-brands-svg-icons";
 interface AccordionItemProps {
   title: string;
@@ -14,7 +14,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, content }) => {
   };
 
   return (
-    <div className="border-b border-dividerGray">
+    <div className="border-b border-dividerGray ">
       <button
         className={`flex justify-between items-center w-full py-3 px-2 text-left transition-all duration-300 ${
           isOpen ? "font-bold text-textBlue" : "text-textVeryDarkBlue"
@@ -41,7 +41,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, content }) => {
 
 const AccordionCard: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center font-kumbh-sans">
+    <div className="min-h-screen flex flex-col justify-center mb-6 items-center font-kumbh-sans">
       <main className="bg-white rounded-2xl p-6 md:p-24 shadow-lg mx-4 max-w-5xl mt-14">
         <div className="relative flex flex-col md:flex-row items-center">
           <div className="w-full md:w-5/6 mt-8 md:mt-0">

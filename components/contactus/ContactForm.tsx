@@ -155,7 +155,10 @@ export default function ContactForm() {
               </FormItem>
             )}
           />
-          <Button className="flex items-center" type="submit">
+          <Button
+            className="flex items-center bg-[#2E8B57] hover:bg-green-400 hover:shadow-lg"
+            type="submit"
+          >
             Submit
           </Button>
         </form>
