@@ -5,6 +5,7 @@ import useMediaQuery from "@/hooks/useMediaQuery";
 import { useState } from "react";
 import { HiBars3 } from "react-icons/hi2";
 import { useRouter } from "next/router";
+import { HiOutlineX } from "react-icons/hi";
 
 export default function Navbar() {
   const flexStyles = "justify-between flex items-center";
@@ -135,6 +136,56 @@ export default function Navbar() {
                 >
                   <HiBars3 className="h-6 w-6" />
                 </button>
+              </div>
+            )}
+
+            {/**mobile menu modal */}
+            {!isAboveMediaScreens && isMenuToggled && (
+              <div
+                className="bg-white fixed right-0 bottom-0 h-full w-[200px] z-40 p-5 drop-shadow-lg 
+                              overflow-hidden transition-transform duration-300 ease-in-out transform translate-x-0"
+              >
+                {/* Close icon */}
+                <div className="p-4 flex justify-end">
+                  <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
+                    <HiOutlineX className="h-6 w-6 text-gray-800 hover:text-red-500 transition duration-200" />
+                  </button>
+                </div>
+
+                {/* Menu Items */}
+                <div className="flex flex-col items-center font-mono text-lg font-bold gap-6 mt-4">
+                  {/* Home */}
+                  <Link
+                    href="/"
+                    className="text-gray-800 hover:text-orange-400 transition duration-200"
+                  >
+                    Home
+                  </Link>
+
+                  {/* Products */}
+                  <Link
+                    href="/products/product"
+                    className="text-gray-800 hover:text-orange-400 transition duration-200"
+                  >
+                    Products
+                  </Link>
+
+                  {/* Services */}
+                  <Link
+                    href="/service"
+                    className="text-gray-800 hover:text-orange-400 transition duration-200"
+                  >
+                    Services
+                  </Link>
+
+                  {/* Cart */}
+
+                  {/* Chat / Notification */}
+                  <Link
+                    href="/chat"
+                    className="text-gray-800 hover:text-orange-400 transition duration-200"
+                  ></Link>
+                </div>
               </div>
             )}
           </div>

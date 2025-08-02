@@ -41,7 +41,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, content }) => {
 
 const AccordionCard: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center mb-6 items-center font-kumbh-sans">
+    <div className="min-h-screen flex flex-col justify-center md:mb-6 sm:md-2 items-center font-kumbh-sans">
       <main className="bg-white rounded-2xl p-6 md:p-24 shadow-lg mx-4 max-w-5xl mt-14">
         <div className="relative flex flex-col md:flex-row items-center">
           <div className="w-full md:w-5/6 mt-8 md:mt-0">
