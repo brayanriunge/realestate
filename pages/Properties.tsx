@@ -3,6 +3,7 @@ import Image from "next/image";
 import page from "@/public/contact.jpg";
 import Layout from "@/components/Layout";
 import { StaticImageData } from "next/image";
+import { Button } from "@/components/ui/button";
 
 type LandProps = {
   imgUrl: string | StaticImageData; // Allow both string paths and StaticImageData
@@ -96,6 +97,15 @@ export default function Properties() {
                       <span>Price: </span>
                       <span className="text-"> {land.price}</span>
                     </p>
+                  </div>
+                  <div className="flex flex-row justify-center gap-4 w-auto">
+                    <Button
+                      className="bg-[#00a650] inline-flex items-center  text-black 
+                    gap-x-1.5 rounded-md bg-primary-600 px-2.5 py-1.5 text-sm font-semibold 
+                    text-white shadow-sm "
+                    >
+                      View Details
+                    </Button>
                   </div>
                 </div>
               </div>
