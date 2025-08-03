@@ -61,7 +61,7 @@ export default function Properties() {
 
   return (
     <Layout>
-      <div className="md:mx-auto md:max-w-7xl px-2 lg:px-4 mb-6">
+      <div className="md:mx-auto md:max-w-7xl px-2 lg:px-4 mb-6 bg-gray-50 mt-40">
         <div className="mx-auto px-2 grid max-w-7xl grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 lg:max-w-none lg:grid-cols-3">
           {lands.map((land, index) => (
             <div
@@ -100,7 +100,7 @@ export default function Properties() {
                   </div>
                   <div className="flex flex-row justify-center gap-4 w-auto">
                     <Button
-                      className="bg-[#00a650] inline-flex items-center mt-4  text-black 
+                      className="bg-[#00a650] inline-flex items-center mt-4 text-white 
                     gap-x-1.5 rounded-md px-2.5 py-1.5 text-sm font-semibold 
                     text-white shadow-sm "
                     >
