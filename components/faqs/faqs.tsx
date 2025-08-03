@@ -41,14 +41,14 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, content }) => {
 
 const AccordionCard: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center md:mb-6 sm:md-2 items-center font-kumbh-sans">
-      <main className="bg-white rounded-2xl p-6 md:p-24 shadow-lg mx-4 max-w-5xl mt-14">
+    <div className="min-h-screen flex flex-col justify-center md:mb-6 sm:mb-2 items-center md:mt-4 sm:mt-2 font-kumbh-sans">
+      <main className="bg-white rounded-2xl  shadow-lg  max-w-5xl ">
         <div className="relative flex flex-col md:flex-row items-center">
-          <div className="w-full md:w-5/6 mt-8 md:mt-0">
-            <h1 className="text-3xl md:text-4xl font-bold text-center md:text-left text-textBlue mb-6">
-              FAQ
+          <div className="w-full md:w-5/6 ">
+            <h1 className="text-3xl md:text-4xl flex items-center font-bold text-center md:text-left text-textBlue mb-6">
+              FAQs
             </h1>
-            <div className="space-y-4">
+            <div className="space-y-4 sm:text-[16px] md:text-[18px]">
               <AccordionItem
                 title="Can I pay via MPESA?"
                 content="Yes through our Paybill Number. Alternatively, we have an account number for bank transfers for all our payments."

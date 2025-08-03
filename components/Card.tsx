@@ -1,5 +1,5 @@
 import Image from "next/image";
-import file from "@/public/file.svg";
+import logo from "@/public/LOGO.jpg";
 import Link from "next/link";
 
 export default function Card() {
@@ -13,7 +13,7 @@ export default function Card() {
 
       <div className="md:w-full sm:w-1/2 lg:w-1/4 p-4">
         <div className="flex flex-col  hover:shadow-lg transition-shadow duration-300 bg-[rgb(241,235,230)] border border-gray-200 rounded">
-          <Image src={file} alt="file" width={400} height={400} />
+          <Image src={logo} alt="file" width={400} height={400} />
           <div className="flex-grow px-4 py-3">
             <h1 className="  text-black font-bold text-[36px]  ">
               MADARAKA VIEW ESTATE
