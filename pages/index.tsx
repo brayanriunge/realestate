@@ -21,7 +21,7 @@ import ContactusPage from "@/components/ContactusPage";
 
 export default function Home() {
   return (
-    <section className="bg-gray-50">
+    <section className="">
       <Head>
         <title>Home</title>
         <meta property="og:title" content="My page title" key="title" />

@@ -64,7 +64,7 @@ export default function Navbar() {
                     <Link
                       href="/Properties"
                       className={`${
-                        router.pathname === "/properties"
+                        router.pathname === "/Properties"
                           ? "text-black"
                           : "text-gray-400"
                       }`}
