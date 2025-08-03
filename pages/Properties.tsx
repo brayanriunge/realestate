@@ -100,8 +100,8 @@ export default function Properties() {
                   </div>
                   <div className="flex flex-row justify-center gap-4 w-auto">
                     <Button
-                      className="bg-[#00a650] inline-flex items-center  text-black 
-                    gap-x-1.5 rounded-md bg-primary-600 px-2.5 py-1.5 text-sm font-semibold 
+                      className="bg-[#00a650] inline-flex items-center mt-4  text-black 
+                    gap-x-1.5 rounded-md px-2.5 py-1.5 text-sm font-semibold 
                     text-white shadow-sm "
                     >
                       View Details
