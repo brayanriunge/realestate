@@ -60,49 +60,48 @@ export default function Properties() {
 
   return (
     <Layout>
-      <div className="flex flex-wrap gap-4 flex-col-4 items-center  border border-gray-200 mx-auto mt-25">
-        {lands.map((land, index) => (
-          <div key={index} className="md:w-full sm:w-1/2 lg:w-1/4 p-4 ">
-            <div className="flex flex-col mb-4 gap-4 hover:shadow-lg transition-shadow duration-300  rounded">
-              <Image
-                src={land.imgUrl}
-                alt="file"
-                width={400}
-                height={400}
-                className=" border border-gray-200"
-              />
-              <div className="flex-grow px-4 py-3">
-                <h1 className="text-black font-bold md:text-[36px] sm:text-[28px]">
-                  {land.title}
-                </h1>
-                <p className="mt-4 md:text-[28px] sm:text-[24px]">
-                  Cash Price:{" "}
-                  <span className="text-[#1E90FF] md:text-[18px] sm:text-[16px]">
-                    {land.price}
-                  </span>
-                </p>
-                <p className="mt-4 md:text-[18px] sm:text-[18px]">
-                  Plot size:{" "}
-                  <span className="text-[#1E90FF] md:text-[18px] sm:text-[16px]">
-                    {land.plotSize}
-                  </span>
-                </p>
-                <p className="mt-4 md:text-[18px] sm:text-[16px]">
-                  Location:{" "}
-                  <span className="text-[#1E90FF] md:text-[18px] sm:text-[16px]">
-                    {land.location}
-                  </span>
-                </p>
-                <p className="mt-4 md:text-[18px] sm:text-[16px]">
-                  Installment Price:
-                  <span className="text-[#1E90FF] md:text-[18px] sm:text-[16px]">
-                    100K
-                  </span>
-                </p>
+      <div className="md:mx-auto md:max-w-7xl px-2 lg:px-4 mb-6">
+        <div className="mx-auto px-2 grid max-w-7xl grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 lg:max-w-none lg:grid-cols-3">
+          {lands.map((land, index) => (
+            <div
+              key={index}
+              className="bg-white flex flex-col items-start justify-between hover:shadow-2xl hover:shadow-gray-900/50 rounded-xl "
+            >
+              <div className="relative w-full">
+                <Image
+                  src={land.imgUrl}
+                  alt="file"
+                  width={400}
+                  height={400}
+                  className=" w-full object-cover "
+                />
+                <div className="absolute inset-0 ring-1 ring-inset ring-gray-900/10"></div>
+              </div>
+              <div className="w-5/6 p-4 ">
+                <div className="group relative py-4 px-4">
+                  <h3 className="mt-1 text-primary-500 text-lg font-bold leading-6">
+                    <span className="absolute inset-0 text-center"></span>
+                    {land.title}
+                  </h3>
+                  <div>
+                    <p className="flex justify-between gap-4">
+                      <span className="font-bold text-secondary-500">
+                        Location:{" "}
+                      </span>
+                      <span className="font-normal  text-gray-500">
+                        {land.location}
+                      </span>
+                    </p>
+                    <p className="flex flex-col md:flex-row justify-between  font-bold">
+                      <span>Price: </span>
+                      <span className="text-"> {land.price}</span>
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </Layout>
   );
