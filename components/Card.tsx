@@ -48,8 +48,11 @@ export default function Card() {
         </div>
       </div>
       <div className="flex items-center justify-between  w-full mb-4 ">
-        <Link href={"/"} className="mx-auto md:text-[24px] sm:text-[20px] ">
-          <button className="bg-[#2E8B57] hover:shadow-md hover:bg-green-400 text-white  rounded-md px-4 py-4 md:mb-6 sm:mb-4">
+        <Link
+          href={"/Properties"}
+          className="mx-auto md:text-[24px] sm:text-[20px] "
+        >
+          <button className="bg-[#00a650] hover:bg-green-400 hover:shadow-xl hover:shadow-gray-300 text-white  rounded-md px-4 py-4 md:mb-6 sm:mb-4">
             View More Properties{" "}
           </button>
         </Link>

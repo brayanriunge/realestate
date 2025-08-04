@@ -156,7 +156,7 @@ export default function ContactForm() {
             )}
           />
           <Button
-            className="flex items-center bg-[#2E8B57] hover:bg-green-400 hover:shadow-lg"
+            className="flex items-center bg-[#00a650] hover:bg-green-400 hover:shadow-xl hover:shadow-gray-300"
             type="submit"
           >
             Submit

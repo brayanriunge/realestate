@@ -13,7 +13,7 @@ export default function Navbar() {
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   const router = useRouter();
   return (
-    <nav className="py-2  bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 shadow-md shadow-primary-950/50">
+    <nav className="  ">
       <div
         className={`z-30 w-full ${flexStyles} fixed top-0 bg-[#ffffff] `}
         //  bg-gradient-to-b from-[#FFFFFF] to-[#F5F5F5]
