@@ -26,20 +26,20 @@ const CarouselSample = () => {
   //   Autoplay({ delay: 2000, stopOnInteraction: true })
   // );
   return (
-    <Carousel className=" md:w-full overflow-hidden mt-10 mb-0">
+    <Carousel className=" md:w-full overflow-hidden mt-24 mb-0">
       <CarouselContent>
         {posters.map((poster) => (
           <CarouselItem
             key={poster.id}
             // className="md:basis-1/2 lg:basis-1/3"
           >
-            <div className="p-1">
+            <div className="">
               <Image
                 src={poster.imgUrl}
                 alt="images"
                 width={500}
                 height={300}
-                className="h-96 w-full flex aspect-square items-center overflow-hidden justify-center p-6"
+                className="h-[500px] w-full flex aspect-square items-center overflow-hidden justify-center "
               />
             </div>
           </CarouselItem>

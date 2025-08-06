@@ -98,7 +98,7 @@ export default function ContactForm() {
           {/* location */}
           <FormField
             control={form.control}
-            name="email"
+            name="location"
             render={({ field }) => (
               <FormItem className="flex p-2 flex-row mt-4 space-x-14">
                 <FormLabel> Location</FormLabel>
