@@ -103,7 +103,7 @@ export default function Properties() {
                     </div>
                     <div className="flex flex-row justify-center gap-4 w-auto">
                       <Button
-                        className="bg-[#00a650] hover:bg-green-100 inline-flex items-center mt-4  
+                        className="bg-[#00a650]  inline-flex items-center mt-4  
                     gap-x-1.5 rounded-md px-2.5 py-1.5 text-sm font-semibold 
                     text-white shadow-sm "
                       >
